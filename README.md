@@ -5,7 +5,7 @@
 
 > Player for Radio Betel Website
 
-### 🏠 [Homepage](https://radiobetel.com.br)
+### 🏠 [Homepage](https://radiobetelfm.com.br)
 
 ### ✨ [Demo](https://radiobetelfm.web.app)
 
