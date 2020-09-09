@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Roboto"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Archivo"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+      integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+      crossorigin="anonymous"
+    />
+    <title>Pedir Música - Rádio Betel FM</title>
+    <link rel="stylesheet" href="/styles/form.css" />
+  </head>
+  <body>
+    <form action="https://pa.srvsite.com/5649/enviarmusica" method="post">
+      <fieldset>
+        <legend>Peça sua música</legend>
+        <div class="input-block">
+          <label for="nome">Nome:</label>
+          <input required="required" type="text" name="nome" id="nome" />
+        </div>
+        <div class="input-block">
+          <label for="email">Email:</label>
+          <input required="required" type="email" name="email" id="email" />
+        </div>
+        <div class="input-block">
+          <label for="cidade">Cidade::</label>
+          <input required="required" type="text" name="cidade" id="cidade" />
+        </div>
+        <div class="input-block">
+          <label for="musica">Musica:</label>
+          <input required="required" type="text" name="musica" id="musica" />
+        </div>
+      </fieldset>
+      <button type="submit">Enviar Música</button>
+    </form>
+    <script id="firebase" src="/__/firebase/7.19.1/firebase-app.js"></script>
+    <script
+      id="firebase"
+      src="/__/firebase/7.19.1/firebase-analytics.js"
+    ></script>
+  </body>
+</html>

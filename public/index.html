@@ -1,0 +1,51 @@
+<html>
+  <head>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <title>Rádio Betel FM</title>
+    <meta property="og:url" content="https://radiobetelfm.com.br/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Rádio Betel FM" />
+    <meta
+      property="og:description"
+      content="Escute a rádio mais eclética de guarapuava e região"
+    />
+    <meta
+      property="og:image"
+      content="https://www.your-domain.com/path/image.jpg"
+    />
+    <style>
+      iframe {
+        border: 0px;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        overflow-x: hidden;
+      }
+      .page {
+        z-index: -1;
+      }
+      .player {
+        height: 72px;
+      }
+    </style>
+  </head>
+  <body>
+    <noscript>Habilite o Javascript para poder escutar a Rádio</noscript>
+    <iframe
+      src="/player.html"
+      scrollbar="no"
+      class="player"
+      frameborder="0"
+    ></iframe>
+    <iframe src="https://www.radiobetelfm.com.br/inicial" class="page">
+    </iframe>
+    <script id="firebase" src="/__/firebase/7.19.1/firebase-app.js"></script>
+    <script
+      id="firebase"
+      src="/__/firebase/7.19.1/firebase-analytics.js"
+    ></script>
+  </body>
+</html>

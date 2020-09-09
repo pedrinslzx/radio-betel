@@ -1,0 +1,106 @@
+/* #region root*/
+@import "./main.css";
+body {
+  background-color: var(--color-background);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+form {
+  background-color: var(--color-box-base);
+  width: 100vw;
+  height: 100vh;
+  max-width: 74rem;
+  border-radius: 0.8rem;
+  padding: 1.6rem 3.2rem;
+  padding-top: 6.4rem;
+  padding-bottom: 2.4rem;
+}
+
+form label {
+  color: var(--color-text-complement);
+}
+form fieldset {
+  border: 0;
+  padding: 0 2.4rem;
+}
+form fieldset legend {
+  font: 700 2.4rem Archivo;
+  color: var(--color-text-title);
+  margin-bottom: 2.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding-bottom: 1.6rem;
+  border-bottom: 1px solid var(--color-line-in-white);
+}
+/* #endregion */
+/* #region input-block*/
+.input-block {
+  position: relative;
+}
+
+.input-block + .input-block {
+  margin-top: 1.4rem;
+}
+
+.input-block label {
+  font-size: 1.4rem;
+}
+
+.input-block input {
+  width: 100%;
+  height: 5.6rem;
+  margin-top: 0.8rem;
+  border-radius: 0.8rem;
+  background-color: var(--color-input-background);
+  border: 1px solid var(--color-line-in-white);
+  outline: 0;
+  padding: 0 1.6rem;
+  font: 1.6rem Archivo;
+}
+
+.input-block:focus-within::after {
+  width: calc(100% - 3.2rem);
+  height: 2px;
+  content: "";
+  background-color: var(--color-primary-light);
+  position: absolute;
+  left: 1.6rem;
+  right: 1.6rem;
+  bottom: 0;
+}
+
+/* #endregion */
+/* #region SubmitButton*/
+button {
+  width: 100%;
+  height: 5.6rem;
+  background-color: var(--color-secondary);
+  color: var(--color-button-text);
+  border: 0;
+  border-radius: 0.8rem;
+  cursor: pointer;
+  font: 700 1.6rem Archivo;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+  margin-top: 3.2rem;
+}
+
+#page-teacher-form main footer button:hover {
+  background-color: var(--color-secondary-dark);
+}
+/* #endregion */
+/* #region responsive*/
+@media (min-width: 700px) {
+  .input-block + .input-block {
+    margin-top: 0;
+  }
+}
+/* #endregion */

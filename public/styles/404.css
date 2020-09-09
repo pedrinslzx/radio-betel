@@ -1,0 +1,21 @@
+@import "./main.css";
+body {
+  width: 100vw;
+  height: 100vh;
+}
+#message {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+h1 {
+  font: 700 3.4rem Archivo;
+  color: var(--color-text-title);
+  margin-bottom: 0.8rem;
+}
+h1 + h1 {
+  font-size: 2.4rem;
+}

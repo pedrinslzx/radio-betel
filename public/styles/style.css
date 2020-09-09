@@ -1,0 +1,64 @@
+/* #region Root*/
+@import "./main.css";
+/* #endregion */
+/* #region Buttons */
+a.ask-button {
+  font-size: 1.8rem;
+  text-align: center !important;
+  font-weight: bold;
+}
+a:hover {
+  opacity: 0.8;
+}
+a {
+  font-weight: bold;
+  transition: 0.2s;
+  text-decoration: none;
+  color: var(--color-button);
+}
+#play-button {
+  cursor: pointer;
+}
+.link {
+  cursor: pointer !important;
+}
+.whatsapp-button {
+  font-size: 2.2rem;
+}
+/* #endregion */
+/* #region Player*/
+.player {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 7rem;
+  padding: 1.6rem 2.4rem;
+  background-color: var(--color-player);
+}
+/* #endregion */
+/* #region Column*/
+.right {
+  color: #000;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.left {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 2.5rem;
+}
+.left div {
+  width: 2.5rem;
+}
+.left div > i {
+  pointer-events: none;
+}
+.right div,
+.right a,
+.left div {
+  margin: 0 1.4rem;
+}
+/* #endregion */

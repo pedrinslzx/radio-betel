@@ -1,0 +1,77 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Roboto"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+      integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+      crossorigin="anonymous"
+    />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <title>Rádio Betel FM</title>
+    <meta property="og:url" content="https://radiobetelfm.com.br/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Rádio Betel FM" />
+    <meta
+      property="og:description"
+      content="Escute a rádio mais eclética de guarapuava e região"
+    />
+    <meta
+      property="og:image"
+      content="https://www.your-domain.com/path/image.jpg"
+    />
+
+    <link rel="stylesheet" href="/styles/style.css" />
+  </head>
+  <body>
+    <noscript>Habilite o Javascript para poder escutar a Rádio</noscript>
+    <div id="fb-root"></div>
+    <script>
+      (function (d, s, id) {
+        var js,
+          fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s);
+        js.id = id;
+        js.src =
+          "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0&appId=768477310584875";
+        fjs.parentNode.insertBefore(js, fjs);
+      })(document, "script", "facebook-jssdk");
+    </script>
+    <div class="player">
+      <div class="left">
+        <div onselectstart="return false" id="play-button" class="link">
+          <i class="fas fa-play"></i>
+        </div>
+        <div class="link" id="mute"><i class="fas fa-volume-up"></i></div>
+        <div class="volume">
+          <input id="vol-control" type="range" min="0" max="100" step="1" />
+        </div>
+      </div>
+      <div class="right">
+        <a href="#" class="ask-button"><span>Pedir Música</span></a>
+        <!-- <a
+          class="whatsapp-button"
+          href="https://api.whatsapp.com/send?text=Escute%20a%20r%C3%A1dio%20betel%20pleo%20link%3A%0Aradiobetelfm.com.br"
+        >
+          <i class="fab fa-whatsapp"></i>
+        </a> -->
+        <div
+          class="fb-share-button"
+          data-href="https://radiobetelfm.com.br/"
+          data-layout="button"
+        ></div>
+      </div>
+    </div>
+    <script type="module" src="/js/index.js"></script>
+    <script id="firebase" src="/__/firebase/7.19.1/firebase-app.js"></script>
+    <script
+      id="firebase"
+      src="/__/firebase/7.19.1/firebase-analytics.js"
+    ></script>
+  </body>
+</html>
